@@ -10,7 +10,7 @@ import {
   setAllCategory,
   setAllSubCategory,
   setLoadingCategory,
-} from "./store/productSlice";
+} from "./store/ProductSlice";
 import { useDispatch } from "react-redux";
 import Axios from "./utils/Axios";
 import SummaryApi from "./common/SummaryApi";
