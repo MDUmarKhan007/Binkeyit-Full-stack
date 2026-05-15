@@ -78,11 +78,7 @@ function App() {
       </main>
       <Footer />
       <Toaster />
-      {
-         location.pathname !== "/checkout" && (
-           <CartMobileLink />
-         )
-      }
+      {location.pathname !== "/checkout" && <CartMobileLink />}
       {/* <CartMobileLink /> */}
     </GlobalProvider>
   );

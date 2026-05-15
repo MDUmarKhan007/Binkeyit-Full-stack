@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaCloudUploadAlt } from "react-icons/fa";
-import uploadImage from "../utils/UploadImage";
+import UploadImage from "../utils/UploadImage";
 import Loading from "../components/Loading";
 import ViewImage from "../components/ViewImage";
 import { MdDelete } from "react-icons/md";
@@ -54,7 +54,7 @@ const EditProductAdmin = ({ close, data: propsData, fetchPrdouctData }) => {
       return;
     }
     setImageLoading(true);
-    const response = await uploadImage(file);
+    const response = await UploadImage(file);
     const { data: ImageResponse } = response;
     const imageUrl = ImageResponse.data.url;
 
